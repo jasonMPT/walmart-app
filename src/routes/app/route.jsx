@@ -6,5 +6,9 @@ export const Route = createFileRoute('/app')({
 })
 
 function AppLayoutComponent() {
-  return <Authenticated><Outlet /></Authenticated>
+  return <>
+    <Authenticated>
+      <Outlet />
+    </Authenticated>
+  </>
 }
